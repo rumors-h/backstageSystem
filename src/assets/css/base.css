@@ -1,6 +1,7 @@
 body,
 html,
-#app{
+#app,
+#home{
   height: 100%;
 }
 *,
