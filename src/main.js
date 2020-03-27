@@ -19,3 +19,5 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+var a = (x,y) => x + y
+    console.log(a(1,2))
