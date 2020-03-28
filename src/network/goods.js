@@ -13,6 +13,7 @@ export function addCatagory(data) {
     data
   })
 }
+/* 商品参数 */
 export function getParams(id,params) {
   return request({
     url: `categories/${id}/attributes`,
@@ -38,5 +39,20 @@ export function deleteParams(id,attrid) {
   return request({
     url: `categories/${id}/attributes/${attrid}`,
     method: 'delete',
+  })
+}
+/* 商品列表 */
+export function getGoods(params) {
+  return request({
+    url: `goods`,
+    method: 'get',
+    params
+  })
+}
+export function addGoods(data) {
+  return request({
+    url: `goods`,
+    method: 'post',
+    data
   })
 }

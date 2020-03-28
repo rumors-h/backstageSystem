@@ -6,7 +6,7 @@
       <el-breadcrumb-item>参数列表</el-breadcrumb-item>
     </el-breadcrumb>
     <el-card>
-      <el-alert show-icon title="注意：只允许为第三级分类设置相关参数！" type="warning"></el-alert>
+      <el-alert show-icon title="注意：只允许为第三级分类设置相关参数！" type="warning" :closable="false"></el-alert>
       <el-row class="selectRow">
         <el-col>
           <span>选择商品分类：</span>
