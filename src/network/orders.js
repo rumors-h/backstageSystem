@@ -12,3 +12,9 @@ export function getLocation() {
     method: 'get',
   })
 }
+export function getReport() {
+  return request({
+    url: `reports/type/1`,
+    method: 'get',
+  })
+}
