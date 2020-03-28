@@ -10,7 +10,8 @@ const Roles = () => import('components/power/Roles')
 const Categories = () => import('components/goods/Categories')
 const GoodsList = () => import('components/goods/GoodsList')
 const Params = () => import('components/goods/Params')
-const AddGoods = () => import('components/goods/AddGoods')
+const Order = () => import('components/order/Order')
+
 
 Vue.use(VueRouter)
 
@@ -50,10 +51,10 @@ const routes = [
         path: '/params',
         component: Params
       },
-      // {
-      //   path: '/goods/add',
-      //   component: AddGoods
-      // }
+      {
+        path: '/orders',
+        component: Order
+      }
     ]
   }
 ]
